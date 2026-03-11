@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>VNR Bank</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+🏦 VNR BANK MANAGEMENT SYSTEM
+</header>
+
+
+<!-- Create Account -->
+
+<div class="container" id="createBox">
+
+<h2>Create Account</h2>
+
+<input type="text" id="name" placeholder="Enter Full Name">
+
+<input type="password" id="pin" placeholder="Enter PIN">
+
+<button onclick="createAccount()">Create Account</button>
+
+<p class="switch" onclick="toggleBox()">
+Already have an account? Login
+</p>
+
+</div>
+
+
+
+<!-- Login -->
+
+<div class="container" id="loginBox" style="display:none">
+
+<h2>Login</h2>
+
+<input type="text" id="loginAcc" placeholder="Account Number">
+
+<input type="password" id="loginPin" placeholder="PIN">
+
+<button onclick="login()">Login</button>
+
+<p class="switch" onclick="toggleBox()">
+Create New Account
+</p>
+
+</div>
+
+
+
+<!-- Dashboard -->
+
+<div class="container" id="bankPanel" style="display:none">
+
+<h2>Bank Dashboard</h2>
+
+<div class="actions">
+
+<button onclick="showBalance()">Check Balance</button>
+
+<button onclick="showDeposit()">Deposit</button>
+
+<button onclick="showWithdraw()">Withdraw</button>
+
+<button onclick="accountDetails()">Account Details</button>
+
+<button onclick="transactionHistory()">Transaction History</button>
+
+<button onclick="logout()">Logout</button>
+
+</div>
+
+
+<!-- Input area for deposit/withdraw -->
+
+<div id="actionArea"></div>
+
+
+<!-- Result output -->
+
+<div id="resultBox">
+
+Welcome to VNR Bank
+
+</div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
